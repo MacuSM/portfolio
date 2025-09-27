@@ -21,10 +21,25 @@ header {
   margin: auto;
 }
 
+/*Logo*/
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.logo img {
+  margin-top: 10px;
+  height: 80px;
+  width: auto;
+}
+
 /*Navbar*/
 
 .navbar {
   position:absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 500;
 }
@@ -32,7 +47,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 64px;
+  height: 80px;
 }
 .menu-items {
   display: flex;
@@ -49,9 +64,9 @@ header {
 }
 
 .navbar-brand {
-  float: left;
-  margin-top: 50px;
+  margin: 0;
   color: #f0f0e6;
+  height: 80px;
 }
 .menu-items a:hover {
   border-bottom: 2px solid #f0f0e6;
