@@ -32,11 +32,18 @@ h1 {
   align-items: center;
   gap: 10px;
   padding: 10px;
+
+  /*GPT Tweaks*/
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  object-fit: contain;      /* keeps proportions */
+
+
 }
 .logo img {
   margin-top: 10px;
   height: 80px;
   width: auto;
+  border-radius: 50%;
 }
 
 /*Navbar*/
