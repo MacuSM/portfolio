@@ -499,6 +499,7 @@ h1 {
   position: relative;
   height: 92vh;
 }
+
 .contact-content {
   position: absolute;
   top: 50%;
@@ -506,32 +507,95 @@ h1 {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
 .contact-content h2 {
   font-size: 2.5rem;
   font-weight: 400;
   color: #25b79f;
   padding-bottom: 0.5rem;
 }
+
 .contact-content .mail {
   color: #f0f0e6;
   padding-bottom: 0.2rem;
   font-size: 1rem;
 }
+
 .contact-content .links {
   color: #25b79f;
   padding: 0.5rem;
   padding-bottom: 1.8rem;
   font-size: 1rem;
 }
-.contact-content a {
+
+/* Default links (inline text links) */
+.contact-content a:not(.btn-social):not(.btn-certificates) {
   text-decoration: none;
   color: #25b79f;
   padding: 0.5rem;
   transition: 0.3s ease-in-out;
 }
-.contact-content a:hover {
+.contact-content a:not(.btn-social):not(.btn-certificates):hover {
   color: #f0f0e6;
 }
+
+/* Social buttons */
+.btn-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #25b79f;
+  color: #f0f0e6;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn-social:hover {
+  background-color: #1fa087;
+  transform: translateY(-2px);
+}
+
+/* Certificates button */
+.btn-certificates {
+  display: inline-block;
+  background-color: #f0f0e6;
+  color: #07374a;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn-certificates:hover {
+  background-color: #07374a;
+  color: #f0f0e6;
+  transform: translateY(-2px);
+}
+
+/* Spacing for the social buttons container */
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Spacing for the certificates section */
+.certificates-link {
+  margin-top: 20px;
+}
+.certificates-text {
+  color: #f0f0e6;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 /* ////......Media query......//// */
 @media (max-width: 500px) {
   html {
@@ -712,5 +776,29 @@ h1 {
   text-align: center;
   color: #f0f0e6;
   font-size: 1.1rem;
-  margin-bottom: 10px; /* space between text and button */
+  margin-bottom: 30px; /* space between text and button */
+}
+
+.footer-copy{
+  color: #69694c;
+}
+
+/*Footer buttons styling*/
+
+.btn-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* space between icon and text */
+  background-color: #25b79f;
+  color: #f0f0e6;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn-social:hover {
+  background-color: #1fa087;
+  transform: translateY(-2px);
 }
