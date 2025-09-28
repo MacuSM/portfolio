@@ -681,3 +681,24 @@ header {
     height: 90vmax;
   }
 }
+
+
+.certificates-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-certificates {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #0a4427;   /* matches your theme */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-certificates:hover {
+  background: #0e8d4d;
+}
